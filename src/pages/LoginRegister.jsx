@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const LoginRegister = () => {
   const location = useLocation();
@@ -76,12 +76,12 @@ const LoginRegister = () => {
         <div className="mt-6 text-center">
           <p className="text-sm text-gray-600">
             {isLogin ? "Don't have an account?" : "Already have an account?"}{" "}
-            <a
-              href={isLogin ? "/register" : "/login"}
+            <Link
+              to={isLogin ? "/register" : "/login"}
               className="text-yellow-500 hover:underline focus:outline-none"
             >
               {isLogin ? "Register here" : "Login here"}
-            </a>
+            </Link>
           </p>
         </div>
       </div>
