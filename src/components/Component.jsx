@@ -49,7 +49,7 @@ const Navbar = () => {
                       <Menu.Item>
                         {({ active }) => (
                           <Link
-                            to="/login"
+                            to="http://localhost:3000/login"
                             className={`${
                               active ? "bg-gray-100" : ""
                             } block px-4 py-2 text-sm text-gray-700`}
@@ -61,7 +61,7 @@ const Navbar = () => {
                       <Menu.Item>
                         {({ active }) => (
                           <Link
-                            to="/register"
+                            to="http://localhost:3000/signup"
                             className={`${
                               active ? "bg-gray-100" : ""
                             } block px-4 py-2 text-sm text-gray-700`}
@@ -82,18 +82,14 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Links */}
           <div className="hidden md:flex items-center space-x-6">
-            <a
-              href="#"
+            <Link
+              to="http://localhost:3000/"
+              target="_blank"
               className="text-gray-700 hover:text-yellow-500 font-medium"
             >
-              Rent
-            </a>
-            <a
-              href="#"
-              className="text-gray-700 hover:text-yellow-500 font-medium"
-            >
-              Buy
-            </a>
+              Store
+            </Link>
+
             <Link
               to="/solutions"
               className="text-gray-700 hover:text-yellow-500 font-medium"
@@ -169,18 +165,14 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {isOpen && (
           <div className="md:hidden">
-            <a
-              href="#"
+            <Link
+              to="http://localhost:3000/"
+              target="_blank"
               className="block text-gray-700 hover:text-yellow-500 px-4 py-2"
             >
-              Rent
-            </a>
-            <a
-              href="#"
-              className="block text-gray-700 hover:text-yellow-500 px-4 py-2"
-            >
-              Buy
-            </a>
+              Store
+            </Link>
+
             <Link
               to="/solutions"
               className="block text-gray-700 hover:text-yellow-500 px-4 py-2"
