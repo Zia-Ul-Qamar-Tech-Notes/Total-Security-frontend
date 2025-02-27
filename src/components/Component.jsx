@@ -83,7 +83,7 @@ const Navbar = () => {
           {/* Links */}
           <div className="hidden md:flex items-center space-x-6">
             <Link
-              to="http://localhost:3000/"
+              to="https://mern-store-cbfw.vercel.app/"
               target="_blank"
               className="text-gray-700 hover:text-yellow-500 font-medium"
             >
@@ -166,7 +166,7 @@ const Navbar = () => {
         {isOpen && (
           <div className="md:hidden">
             <Link
-              to="http://localhost:3000/"
+              to="https://mern-store-cbfw.vercel.app/"
               target="_blank"
               className="block text-gray-700 hover:text-yellow-500 px-4 py-2"
             >
