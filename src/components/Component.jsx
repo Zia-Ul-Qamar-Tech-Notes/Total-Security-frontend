@@ -49,7 +49,7 @@ const Navbar = () => {
                       <Menu.Item>
                         {({ active }) => (
                           <Link
-                            to="http://localhost:3000/login"
+                            to="https://mern-store-cbfw.vercel.app/login"
                             className={`${
                               active ? "bg-gray-100" : ""
                             } block px-4 py-2 text-sm text-gray-700`}
@@ -61,7 +61,7 @@ const Navbar = () => {
                       <Menu.Item>
                         {({ active }) => (
                           <Link
-                            to="http://localhost:3000/signup"
+                            to="https://mern-store-cbfw.vercel.app/signup"
                             className={`${
                               active ? "bg-gray-100" : ""
                             } block px-4 py-2 text-sm text-gray-700`}
